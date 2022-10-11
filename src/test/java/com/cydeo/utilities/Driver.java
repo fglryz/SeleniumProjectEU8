@@ -6,7 +6,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 public class Driver {
@@ -42,6 +45,7 @@ public class Driver {
                 switch statement will determine the case, and open the matching browser
             */
             switch (browserType){
+
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
