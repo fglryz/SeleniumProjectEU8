@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="fairun test" parallel="classes" thread-count="7">
+
+    <!-- in this case we do not need to specify every class one by one,just include package-->
+
+    <test name="test1">
+        <classes>
+
+            <class name="com.cydeo.tests.day11_actions_jsexecutor_practice.T1_Circle_Drag_N_Drop"/>
+
+
+        </classes>
+    </test>
+
+</suite>

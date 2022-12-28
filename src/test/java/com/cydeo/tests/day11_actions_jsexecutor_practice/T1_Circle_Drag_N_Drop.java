@@ -36,7 +36,7 @@ public class T1_Circle_Drag_N_Drop {
         //-Text in big circle changed to: “You did great!”
 
         String actualBigCircleText = bigCircle.getText();
-        String expectedBigCircleText = "You did great!";
+        String expectedBigCircleText = "Drag the small circle here.";
 
         Assert.assertEquals(actualBigCircleText, expectedBigCircleText);
     }
